@@ -1,0 +1,63 @@
+.header
+    height: 85px
+    display: flex
+    align-items: center
+    width: 100%
+    margin: 0 auto
+    border-bottom: 1px solid #D1DBD6
+    font-family: 'Tele2TextSansRegularShortWEB'
+    @media #{$breakpoint-lg-only} 
+        max-width: 1152px
+        padding: $gutter
+    @media #{$breakpoint-md-only}
+        padding: 0 16px
+    @media #{$breakpoint-xs-only}
+        padding: $gutter
+    &-nav
+        max-width: 544px
+        margin-left: 30px
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        margin-right: 24px
+        &-element
+            color: $grayHover
+            font-size: 14px
+            line-height: 28px
+            margin-right: 19px
+    &-tools
+        color: $grayHover
+        max-width: 430px
+        &-achieve, &-mytalk, &-rating
+            position: relative
+            width: 67px
+            height: 61px
+            text-align: center
+            float: left
+            &::before
+                position: absolute
+                content: ""
+                width: 1px
+                height: 65px
+                left: 0
+                top: 50%                  
+                transform: translate(0, -50%)
+                background-color: #D1DBD6
+            &-counter
+                font-size: 11px
+                line-height: 18px
+        &-rating-img
+            margin-top: 14px
+    &-profile
+        display: flex
+        flex-direction: row
+        margin-right: 20px
+        color: $grayHover
+        &-avatar
+            width: 32px
+            height: 32px
+            margin-right: 12px
+        &-name
+            max-width: 120px
+            font-size: 13px
+            line-height: 13px

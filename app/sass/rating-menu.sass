@@ -1,0 +1,45 @@
+.rating-menu
+    width: 100% 
+    &-grayBlock
+        height: 60px
+        background-color: #8F9399
+        margin: 0 auto
+        @media #{$breakpoint-lg-only} 
+            max-width: 1152px
+            padding: $gutter
+        @media #{$breakpoint-md-only}
+            padding: 0 16px
+        @media #{$breakpoint-xs-only}
+            padding: $gutter
+        &-title
+            font-family: "Tele2DisplaySerifBoldShortWeb"
+            font-size: 22px
+            color: #fff
+            line-height: 60px
+    &-choose
+        height: 60px
+        margin: 0 auto
+        border-bottom: 1px solid #D1DBD6
+        @media #{$breakpoint-lg-only} 
+            max-width: 1152px
+            padding: $gutter
+        @media #{$breakpoint-md-only}
+            padding: 0 16px
+        @media #{$breakpoint-xs-only}
+            padding: $gutter
+        & > *
+            margin-right: 30px
+            padding: 0
+            border: none
+            font: inherit
+            font-size: 18px
+            line-height: 60px
+            color: #8F9399
+            background-color: transparent
+            font-family: Tele2TextSansRegularShortWEB
+            &:focus
+                color: black
+                outline: none
+                border-bottom: 1px solid black
+
+            
