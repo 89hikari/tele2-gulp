@@ -1,27 +1,110 @@
 .rating
+    &-table
+        display: flex
+        align-items: normal
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        @media #{$breakpoint-xs-only}
+            flex-direction: column-reverse
+            align-items: normal
+        &-right
+            float: right
+            max-width: 252px
+            flex: 1 1 auto
+            margin-left: 32px
+            @media #{$breakpoint-xs-only}
+                max-width: 768px
+                margin-left: 0
+                margin-top: 35px
+                width: 100%
+            &-element
+                padding-left: 18px
+                height: 132px
+                width: 100%
+                background-color: #F0F1F2
+                margin-bottom: 2px
+                position: relative
+                @media #{$breakpoint-xs-only}
+                    height: 65px
+                &-title
+                    font-family: "Tele2DisplaySerifBoldShortWeb"
+                    font-size: 13px
+                    padding-top: 18px
+                    @media #{$breakpoint-xs-only}
+                        padding-top: 10px
+                &-place
+                    padding-top: 8px
+                    @media #{$breakpoint-xs-only}
+                        position: absolute
+                        text-align: right
+                        top: 2px
+                        right: 18px
+                    p.place
+                        font-size: 22px
+                        font-family: "Tele2DisplaySerifBoldShortWeb"
+                        line-height: 28px
+                    p.place-title
+                        font-family: 'Tele2TextSansRegularShortWEB'
+                        font-size: 13px
+                        line-height: 13px
+                        color:#8F9399
+                &-show
+                    display: inline-block
+                    font-size: 13px
+                    padding-top: 8px
+                    font-family: 'Tele2TextSansRegularShortWEB'
+                    color: #8F9399
+                    border-bottom: 1px dotted #8F9399
+                    @media #{$breakpoint-xs-only}
+                        padding-top: 5px
+        &-moreWrapper
+            margin-top: 24px
+            margin-bottom: 108px
+            text-align: center
+            &-more
+                display: inline
+                font-family: 'Tele2TextSansRegularShortWEB'
+                color: #8F9399
+                font-size: 22px
+                border-bottom: 2px dotted #8F9399
+                &:hover
+                    cursor: pointer
     &-title
         font-family: "Tele2DisplaySerifBoldShortWeb"
         font-size: 38px
+        @media #{$breakpoint-xs-only}
+            font-size: 28px
     &-select  
         font-family: 'Tele2TextSansRegularShortWEB'
         border: none
         &:focus
             outline: none
+    &-search-wrapper
+        max-width: 828px
+    &-searchByName-wrapper
+        max-width: 460px
     &-table-container
+        flex: 1 1 auto
         max-width: 828px
         margin-top: 36px
+        @media #{$breakpoint-xs-only}
+            margin-top: 18px
         &-search
             width: 100%
+            text-overflow: ellipsis
             position: relative
             font-family: 'Tele2TextSansRegularShortWEB'
             font-size: 16px
             border: none
             border-bottom: 2px solid #8F9399
-            padding: 20.4px 0 10px 0
+            padding: 20.4px 30px 10px 0
             -moz-appearance: none
             -webkit-appearance: none
             appearance: none
             background: url('../images/opener.png') no-repeat right 15px bottom 12px
+            @media #{$breakpoint-xs-only}
+                color: #8F9399
             &:focus
                 outline: none
         &-search::after
@@ -31,8 +114,8 @@
             height: 10px
 
 input[type=search]
-    width: 100%
     padding: 7px 0 10px 40px
+    width: calc(100% - 40px)
     background: url('../images/search.png') no-repeat scroll 0 50%
     border: none
     border-bottom: 2px solid #8F9399
@@ -42,6 +125,10 @@ form
     font-size: 16px
     line-height: 20px
     margin-top: 36px
+    @media #{$breakpoint-xs-only}
+        margin-top: 18px
     max-width: 500px
 input:focus
     outline: none
+.content-wrapper
+    width: 100%

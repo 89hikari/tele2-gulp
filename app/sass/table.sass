@@ -5,22 +5,73 @@ table
     font-weight: inherit
     font-size: 13px
     text-align: left
+    @media #{$breakpoint-xs-only}
+        margin-top: 18px
+    th, td
+        max-width: 200px
+        @media #{$breakpoint-xs-only}
+            padding: 0 
+            padding-top: 8px
+    th
+        @media #{$breakpoint-xs-only}
+            float: left
+    td
+        @media #{$breakpoint-xs-only}
+            padding-left: 40px
+            
     tr
+        position: relative
         height: 48px
         border-bottom: 1px solid #D1DBD6
+        @media #{$breakpoint-xs-only}
+            & *
+                display: block
+    tr:first-child
+        @media #{$breakpoint-xs-only}
+            border-top: 1px solid #D1DBD6
+    
     .table-empty
         width: 65px
         height: 100%
         padding: 0
+
     .table-counter
+        width: 65px
         color: #8F9399
         font-weight: normal
         padding-left: 20px
+        @media #{$breakpoint-xs-only}
+            padding-left: 0
+            width: 40px
     thead tr
         border-bottom: 1px solid #000
+        @media #{$breakpoint-xs-only}
+            display: none
         th
             padding-bottom: 8px
+    tbody span
+        @media #{$breakpoint-xs-only}
+            display: inline-block
+        @media #{$breakpoint-lg-only}
+            display: none
+        @media #{$breakpoint-md-only}
+            display: none
+        
     tbody tr:hover
+        transition: .2s
         background-color: #F0F1F2
+
     tbody tr td:nth-child(4), tbody tr td:nth-child(6)
         color: #8F9399
+        
+    tbody tr td:nth-child(5)
+        font-size: 18px
+        font-family: 'DisplaySerifBold'
+        @media #{$breakpoint-xs-only}
+            font-size: 13px
+            float: left
+
+    tbody tr td:nth-child(6)
+        @media #{$breakpoint-xs-only}
+            float: right
+            padding-bottom: 8px
