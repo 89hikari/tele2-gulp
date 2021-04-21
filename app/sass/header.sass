@@ -33,6 +33,11 @@
         flex-wrap: wrap
         margin-right: 24px
         &-element
+            overflow: hidden
+            float: left
+            display: block
+            min-height: 28px
+            max-height: 28px
             max-width: 179px
             color: $grayHover
             font-size: 14px
@@ -71,6 +76,10 @@
                 transform: translate(0, -50%)
                 background-color: #D1DBD6
             &-counter
+                display: block
+                height: 18px
+                max-height: 30px
+                overflow: hidden
                 font-size: 11px
                 line-height: 18px
         &-rating-img
@@ -88,7 +97,10 @@
             height: 32px
             margin-right: 12px
         &-name
-            max-width: 120px
+            height: 32px
+            max-height: 32px
+            overflow: hidden
+            max-width: 150px
             font-size: 13px
             line-height: 13px
     &-menu

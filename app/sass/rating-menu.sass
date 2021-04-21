@@ -2,6 +2,7 @@
     width: 100% 
     &-grayBlock
         height: 60px
+        max-height: 60px
         background-color: #8F9399
         margin: 0 auto
         @media #{$breakpoint-lg-only} 
@@ -22,6 +23,8 @@
                 line-height: 42px
     &-choose
         height: 60px
+        max-height: 60px
+        overflow: hidden
         @media #{$breakpoint-xs-only}
             height: 49px
         margin: 0 auto
@@ -33,9 +36,13 @@
         @media #{$breakpoint-xs-only}
             padding: $gutter
         & > *
+            min-width: 100px
+            max-width: 200px
             margin-right: 30px
             padding: 0
             border: none
+            display: block
+            float: left
             font: inherit
             font-size: 18px
             line-height: 59px
