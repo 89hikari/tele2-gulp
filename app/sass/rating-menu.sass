@@ -3,7 +3,6 @@
     &-grayBlock
         height: 60px
         max-height: 60px
-        z-index: 1
         background-color: #8F9399
         margin: 0 auto
         @media #{$breakpoint-lg-only} 
@@ -61,5 +60,10 @@
                 color: black
                 outline: none
                 border-bottom: 1px solid black
+
+.rating-searchs.col-9
+    @media #{$breakpoint-xs-only}
+        max-width: 100%
+        flex-basis: 100%
 
             

@@ -266,7 +266,7 @@
 
 if ($(window).width() > 767) {
   $(".rating-table-right").stick_in_parent({
-    offset_top: 10,
-    parent: ".rating-table"
+    offset_top: -30,
+    parent: ".table-right.col-3"
 });
 }
