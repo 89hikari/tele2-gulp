@@ -31,7 +31,6 @@
         list-style: none
         display: flex
         flex-wrap: wrap
-        margin-right: 24px
         &-element
             overflow: hidden
             float: left
@@ -140,3 +139,5 @@
     &-exit
         @media #{$breakpoint-xs-only}
             display: none
+        &:hover
+            cursor: pointer

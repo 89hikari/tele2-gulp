@@ -7,11 +7,14 @@ table
     text-align: left
     @media #{$breakpoint-xs-only}
         margin-top: 18px
+
     tr th > div, tr td > div
         height: 18px
         max-height: 18px
         min-height: 18px
+
     th, td
+        min-width: 70px
         max-width: 200px
         word-break: break-all
         overflow-wrap: break-word
@@ -19,12 +22,18 @@ table
         @media #{$breakpoint-xs-only}
             padding: 0 
             padding-top: 8px
+            min-width: 40px
+
     th
         @media #{$breakpoint-xs-only}
             float: left
+            & div
+                width: 10px
     td
+
         @media #{$breakpoint-xs-only}
             padding-left: 40px
+            max-width: 100%
 
     tr
         position: relative
@@ -34,6 +43,7 @@ table
         @media #{$breakpoint-xs-only}
             & *
                 display: block
+
     tr:first-child
         @media #{$breakpoint-xs-only}
             border-top: 1px solid #D1DBD6
@@ -44,19 +54,19 @@ table
         padding: 0
 
     .table-counter
-        width: 65px
         color: #8F9399
         font-weight: normal
         padding-left: 20px
         @media #{$breakpoint-xs-only}
             padding-left: 0
-            width: 40px
+
     thead tr
         border-bottom: 1px solid #000
         @media #{$breakpoint-xs-only}
             display: none
         th
             padding-bottom: 8px
+            
     tbody span
         @media #{$breakpoint-xs-only}
             display: inline-block
