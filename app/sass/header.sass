@@ -7,15 +7,17 @@
     border-bottom: 1px solid #D1DBD6
     font-family: 'Tele2TextSansRegularShortWEB'
     &-logo
-        margin-right: auto
+        @media #{$breakpoint-md-only}
+            margin-right: auto
         @media #{$breakpoint-xs-only}
+            margin-right: auto
             &-img
                 width: 58px
                 height: 22px
     &-logo:hover
         cursor: pointer
     @media #{$breakpoint-lg-only} 
-        max-width: 1152px
+        
         padding: $gutter
     @media #{$breakpoint-md-only}
         justify-content: flex-end
@@ -42,6 +44,10 @@
         @media #{$breakpoint-xs-only}
             display: none
     &-tools
+        &-container
+            display: flex
+            align-items: center
+            margin-left: auto
         color: $grayHover
         max-width: 430px
         @include hovers(&-achieve)

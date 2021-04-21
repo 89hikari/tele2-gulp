@@ -9,6 +9,10 @@ table
         margin-top: 18px
     th, td
         max-width: 200px
+        height: 48px
+        max-height: 48px
+        word-break: break-all
+        
         @media #{$breakpoint-xs-only}
             padding: 0 
             padding-top: 8px
@@ -16,6 +20,8 @@ table
         @media #{$breakpoint-xs-only}
             float: left
     td
+        overflow-wrap: break-word
+        overflow-y: hidden
         @media #{$breakpoint-xs-only}
             padding-left: 40px
             
@@ -75,3 +81,27 @@ table
         @media #{$breakpoint-xs-only}
             float: right
             padding-bottom: 8px
+
+.table
+
+    &-head
+        &.row
+            
+            padding-bottom: 8px
+            border-bottom: 1px solid #000
+            font-size: 13px
+            font-family: 'Tele2TextSansRegularShortWEB'
+    &-body
+        &.row
+            height: 48px
+            max-height: 48px
+            padding-top: 18px
+            padding-bottom: 18px
+            font-size: 13px
+            line-height: 18px
+            font-family: 'Tele2TextSansRegularShortWEB'
+            border-bottom: 1px solid #D1DBD6
+        & > *
+            
+            overflow-wrap: break-word
+            overflow-y: hidden
