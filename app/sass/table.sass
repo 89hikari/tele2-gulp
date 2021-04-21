@@ -98,31 +98,14 @@ table
             float: right
             padding-bottom: 8px
 
-/*.table
-    &-head
-        &.row
-            height: 28px
-            max-height: 28px
-            padding-bottom: 8px
-            border-bottom: 1px solid #000
-            font-size: 13px
-            font-family: 'Tele2TextSansRegularShortWEB'
-    &-body
-        &.row
-            height: 48px
-            max-height: 48px
-            padding-top: 18px
-            padding-bottom: 18px
-            font-size: 13px
-            line-height: 18px
-            font-family: 'Tele2TextSansRegularShortWEB'
-            border-bottom: 1px solid #D1DBD6
-        & > *
-            
-            overflow-wrap: break-word
-            overflow-y: hidden*/
-/*span
-    @media #{$breakpoint-lg-only}
-        display: none
-    @media #{$breakpoint-md-only}
-        display: none*/
+.table-wrapper
+    @media #{$breakpoint-xs-only}
+        display: flex
+        flex-direction: column-reverse
+        .col-9, .col-3
+            width: 100%
+            max-width: 100%
+.col-9
+    @media #{$breakpoint-xs-only}
+        width: 100%
+        max-width: 100%
