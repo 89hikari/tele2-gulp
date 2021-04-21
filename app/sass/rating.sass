@@ -29,12 +29,20 @@
                 @media #{$breakpoint-xs-only}
                     height: 65px
                 &-title
+                    max-width: 100%
+                    width: 100%
+                    overflow: hidden
+                    max-height: 40px
                     font-family: "Tele2DisplaySerifBoldShortWeb"
                     font-size: 13px
                     padding-top: 18px
                     @media #{$breakpoint-xs-only}
                         padding-top: 10px
                 &-place
+                    max-width: 100%
+                    width: 100%
+                    overflow: hidden
+                    max-height: 50px
                     padding-top: 8px
                     @media #{$breakpoint-xs-only}
                         position: absolute
@@ -51,6 +59,9 @@
                         line-height: 13px
                         color:#8F9399
                 &-show
+                    overflow: hidden
+                    max-height: 50px
+                    max-width: 100%
                     display: inline-block
                     font-size: 13px
                     padding-top: 8px
@@ -64,7 +75,12 @@
             margin-bottom: 108px
             text-align: center
             &-more
-                display: inline
+                display: block
+                margin: 0 auto
+                
+                max-width: 135px
+                max-height: 35px
+                overflow: hidden
                 font-family: 'Tele2TextSansRegularShortWEB'
                 color: #8F9399
                 font-size: 22px
@@ -77,6 +93,7 @@
         height: 42px
         max-height: 42px
         overflow: hidden
+        max-width: 272px
         @media #{$breakpoint-xs-only}
             font-size: 28px
     &-select  
@@ -85,6 +102,9 @@
         &:focus
             outline: none
     &-search-wrapper
+        margin-top: 36px
+        @media #{$breakpoint-xs-only}
+            margin-top: 18px
         max-width: 828px
     &-searchByName-wrapper
         max-width: 460px

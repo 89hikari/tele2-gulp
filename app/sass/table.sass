@@ -13,9 +13,9 @@ table
         min-height: 18px
     th, td
         max-width: 200px
-        
         word-break: break-all
-        
+        overflow-wrap: break-word
+        overflow: hidden
         @media #{$breakpoint-xs-only}
             padding: 0 
             padding-top: 8px
@@ -23,11 +23,9 @@ table
         @media #{$breakpoint-xs-only}
             float: left
     td
-        overflow-wrap: break-word
-        overflow: hidden
         @media #{$breakpoint-xs-only}
             padding-left: 40px
-            
+
     tr
         position: relative
         height: 48px
